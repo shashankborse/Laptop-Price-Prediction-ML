@@ -1,152 +1,130 @@
-\*\*Laptop Price Prediction Using Machine Learning\*\*
+### **Laptop Price Prediction Using Machine Learning**
 
-This project uses regression techniques to predict laptop prices based
-on configurations, including Linear Regression, SVR, and Random Forest.
-The Random Forest model was the most effective, achieving an R-squared
-score of \*\*88.24%\*\*.
+This project uses regression techniques to predict laptop prices based on configurations, including Linear Regression, SVR, and Random Forest. The Random Forest model was the most effective, achieving an R-squared score of **88.24%**.
 
-\*\*Table of Contents\*\*
 
-1\. Project Overview
+#### **Table of Contents**
 
-2\. Data Overview
+1. Project Overview
 
-3\. Steps to Run
+2. Data Overview
 
-4\. Results
+3. Steps to Run
 
-5\. Technologies Used
+4. Results
 
-6\. Key Insights
+5. Technologies Used
 
-7\. Contact
+6. Key Insights
 
-\*\*Project Overview\*\*
+7. Contact
 
-The aim of this project is to predict laptop prices based on
-specifications like processor, RAM, GPU, and screen type. It explores
-regularized regression techniques such as L1 (Lasso), L2 (Ridge),
-Elastic Net, Support Vector Regression (SVR), and Random Forest to
-identify the best predictive model.
+**Project Overview**
 
-This project was part of a college assessment for the module \"Applied
-Statistics and Machine Learning\" and adheres to rigorous data
-preprocessing, modeling, and evaluation standards.
+The aim of this project is to predict laptop prices based on specifications like processor, RAM, GPU, and screen type. It explores regularized regression techniques such as L1 (Lasso), L2 (Ridge), Elastic Net, Support Vector Regression (SVR), and Random Forest to identify the best predictive model.
 
-\*\*Data Overview\*\*
+This project was part of a college assessment for the module “Applied Statistics and Machine Learning” and adheres to rigorous data preprocessing, modeling, and evaluation standards.
 
-\- \*\*Dataset:\*\* Contains 1,721 rows and 23 columns, including input
-features like RAM, CPU, GPU, and an output feature: Price_euros.
+**Data Overview**
 
-\- \*\*Source:\*\* The dataset contains information on laptop
-specifications collected from various manufacturers.
+- **Dataset:** Contains 1,721 rows and 23 columns, including input features like RAM, CPU, GPU, and an output feature: Price\_euros.
 
-\- \*\*Key Features:\*\*
+- **Source:** The dataset contains information on laptop specifications collected from various manufacturers.
 
-\- Numerical Attributes: RAM, Weight, CPU_freq, etc.
+- **Key Features:**
 
-\- Binary Attributes: Touchscreen, RetinaDisplay, etc.
+  - **Numerical Attributes:** RAM, Weight, CPU\_freq, etc.
 
-\- Categorical Attributes: Company, TypeName, OS, GPU_company, etc.
+  - **Binary Attributes:** Touchscreen, RetinaDisplay, etc.
 
-\- \*\*Processing Steps:\*\*
+  - **Categorical Attributes:** Company, TypeName, OS, GPU\_company, etc.
 
-1\. Encoding: Target encoding, one-hot encoding, and ordinal encoding
-based on feature type.
+- **Processing Steps:**
 
-2\. Scaling: StandardScaler to normalize data for machine learning
-models.
+1. **Encoding:** Target encoding, one-hot encoding, and ordinal encoding based on feature type.
 
-3\. Dimensionality Reduction: PCA (Principal Component Analysis) to
-reduce dimensionality and improve model performance.
+2. **Scaling:** StandardScaler to normalize data for machine learning models.
 
-\*\*Steps to Run\*\*
+3. **Dimensionality Reduction:** PCA (Principal Component Analysis) to reduce dimensionality and improve model performance.
+
+**Steps to Run**
 
 To replicate this project, follow these steps:
 
-1\. Clone the repository:
+1. Clone the repository:
 
-git clone
-https://github.com/shashankborse/Laptop-Price-Prediction-ML.git
+git clone https\://github.com/shashankborse/Laptop-Price-Prediction-ML.git
 
-2\. Navigate to the project directory:
+2. Navigate to the project directory:
 
 cd Laptop-Price-Prediction-ML
 
-3\. Install the required Python libraries:
+3. Install the required Python libraries:
 
 pip install -r requirements.txt
 
-4\. Open the Jupyter notebook:
+4. Open the Jupyter notebook:
 
-jupyter notebook laptop_price_prediction.ipynb
+jupyter notebook laptop\_price\_prediction.ipynb
 
-5\. Run the notebook to:
+5. Run the notebook to:
 
-\- Preprocess the dataset.
+- Preprocess the dataset.
 
-\- Train regression models (Linear Regression, SVR, and Random Forest).
+- Train regression models (Linear Regression, SVR, and Random Forest).
 
-\- Evaluate model performance.
+- Evaluate model performance.
 
-\- Predict laptop prices using new input data.
+- Predict laptop prices using new input data.
 
-\*\*Results\*\*
+**Results**
 
-\- \*\*Best Model:\*\* Random Forest Regressor
+- **Best Model:** Random Forest Regressor
 
-\- \*\*R-squared Score:\*\* 88.24%
+- **R-squared Score:** 88.24%
 
-\- \*\*Example Prediction:\*\*
+- **Example Prediction:**
 
-\- \*\*Input:\*\* \[\'Apple\', \'Ultrabook\', 16GB RAM, Intel Core i7,
-Retina Display, etc.\]
+  - **Input:** \['Apple', 'Ultrabook', 16GB RAM, Intel Core i7, Retina Display, etc.]
 
-\- \*\*Predicted Price:\*\* €3137.12
+  - **Predicted Price:** €3137.12
 
-The Random Forest model outperformed Linear Regression (Elastic Net) and
-Support Vector Regression (SVR) by capturing non-linear relationships in
-the data.
+The Random Forest model outperformed Linear Regression (Elastic Net) and Support Vector Regression (SVR) by capturing non-linear relationships in the data.
 
-\*\*Technologies Used\*\*
+**Technologies Used**
 
-\- \*\*Programming Language:\*\* Python
+- **Programming Language:** Python
 
-\- \*\*Libraries:\*\*
+- **Libraries:**
 
-\- Data Processing: Pandas, NumPy
+  - Data Processing: Pandas, NumPy
 
-\- Visualization: Matplotlib, Seaborn
+  - Visualization: Matplotlib, Seaborn
 
-\- Machine Learning: Scikit-learn
+  - Machine Learning: Scikit-learn
 
-\- \*\*Tools:\*\* Jupyter Notebook, Google Colab
+  - **Tools:** Jupyter Notebook, Google Colab
 
-\*\*Key Insights\*\*
+**Key Insights**
 
-1\. \*\*Data Preprocessing Matters:\*\* Encoding, scaling, and
-dimensionality reduction (PCA) significantly improved model performance.
+1. **Data Preprocessing Matters:** Encoding, scaling, and dimensionality reduction (PCA) significantly improved model performance.
 
-2\. \*\*Random Forest is Superior:\*\* Captured non-linear relationships
-better than other models, achieving the highest R-squared score.
+2. **Random Forest is Superior:** Captured non-linear relationships better than other models, achieving the highest R-squared score.
 
-3\. \*\*Elastic Net\'s Balance:\*\* Combined L1 (interpretability) and
-L2 (performance) regularizations effectively, making it a strong
-alternative for simpler models.
+3. **Elastic Net’s Balance:** Combined L1 (interpretability) and L2 (performance) regularizations effectively, making it a strong alternative for simpler models.
 
-4\. \*\*SVR\'s Trade-offs:\*\* Although SVR captured non-linear
-patterns, its interpretability is limited compared to Random Forest and
-Elastic Net.
+4. **SVR’s Trade-offs:** Although SVR captured non-linear patterns, its interpretability is limited compared to Random Forest and Elastic Net.
 
-\*\*Contact\*\*
+**Contact**
 
-\- \*\*Name:\*\* Shashank Borse
+- **Name:** Shashank Borse
 
-\- \*\*LinkedIn:\*\* https://www.linkedin.com/in/shashankborse/
+- **LinkedIn:**[ https://www.linkedin.com/in/shashankborse/](https://www.linkedin.com/in/shashankborse/)
 
-\- \*\*Email:\*\* work@shashankborse.com
+- **Email:** work\@shashankborse.com
 
-\*\*License\*\*
+**License**
 
-This project is licensed under the MIT License - see the LICENSE file
-for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Copy this into a README.md file, and it will work perfectly as markdown.
